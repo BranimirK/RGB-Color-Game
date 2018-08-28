@@ -48,11 +48,14 @@ resetButton.addEventListener("click", function(){
 	pickedColor = pickColor();
 	//promjeniti colorDisplay da bude kao pickedColor
 	colorDisplay.textContent = pickedColor;
+	this.textContent = "New Colors";
 	//promjeniti boje squares-a,
+	messageDisplay.textContent = "";
 	for(var i=0; i<squares.length; i++){
 		squares[i].style.backgroundColor = colors[i];
 	}
-	h1.style.backgroundColor = "#232323";
+	h1.style.backgroundColor = "steelblue";
+
 });
 
 colorDisplay.textContent = pickedColor; // postavlja The blablabla-boja odma cim ucita
